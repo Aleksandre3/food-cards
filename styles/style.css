@@ -1,0 +1,165 @@
+@import "./colors.css";
+@import "./fonts.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--lightGrey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 40px;
+}
+
+h2 {
+  font-family: var(--DmSerifDisplay);
+  color: var(--darkBlue);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.24px;
+}
+
+p {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  width: 312px;
+  color: var(--lightPurple);
+}
+button {
+  color: var(--lightPurple);
+  font-family: var(--openSans);
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.container {
+  width: 360px;
+  border-radius: 16px;
+  background-color: var(--white);
+  position: relative;
+}
+
+.info-icon {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  background: var(--white);
+  padding: 7px;
+  border-radius: 50%;
+}
+
+.card-inner {
+  padding: 0 24px 41px;
+}
+
+.card-image img {
+  width: 100%;
+  position: relative;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 32px 0 24px 0;
+}
+
+.icon-container {
+  display: flex;
+  gap: 9px;
+}
+.icon-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.red-circle {
+  background-color: var(--red);
+}
+
+.orange-circle {
+  background-color: var(--orange);
+}
+
+.green-circle {
+  background-color: var(--green);
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 0 41px;
+}
+
+.info-container > div {
+  font-weight: 600;
+  line-height: 25px;
+  font-family: var(--openSans);
+  color: var(--lighterPurple);
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prices {
+  display: flex;
+  gap: 8px;
+}
+
+.prices > div {
+  font-family: var(--DmSerifDisplay);
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.prices > div:first-child {
+  font-size: 28px;
+}
+
+.prices > div:nth-child(even) {
+  font-size: 28px;
+  font-size: 20px;
+  text-decoration: line-through;
+  color: var(--red);
+}
+
+.order-btn {
+  width: 114px;
+  padding: 9px 0;
+  background-color: var(--green);
+  color: var(--white);
+  text-transform: uppercase;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid var(--green);
+  font-family: var(--openSans);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 2.52px;
+  transition: 0.5s;
+}
+
+.order-btn:hover {
+  background: transparent;
+  color: var(--darkBlue);
+}
+
+.order-btn:active {
+  background-color: #2ecc71;
+}
